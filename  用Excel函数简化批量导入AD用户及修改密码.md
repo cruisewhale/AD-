@@ -8,7 +8,9 @@
 http://support.microsoft.com/kb/327620
 http://support.microsoft.com/kb/322684
 简单说下csvde.exe中用到的定义值
+
 DN,objectClass,sAMAccountName,description,userPrincipalName,displayName,userAccountControl
+
 DN:名字标示
 objectClass：组的类别
 sAMAccountName：2000以前版本：也是用户登录名称的意思
@@ -29,6 +31,7 @@ userAccountControl：对账户权限进行控制，512启动， 514禁用， 660
 
 打开我们的ADUC就能看到我们导入的用户了。。。
 
+![](Pic/170847973.jpg)
 
 第二步是修改密码。在文件的第二张表中，没有需要输入的地方，如果我们需要修改用户的密码，只要将表中的绿色区域替换成实际密码即可。然后将表二中的蓝色区域字符，copy到txt文件中。需要注意的是，我们需要将“-pwd”前面的那个逗号“，”用替换的方式一次性全部去掉。然后将这个txt文本的后缀改为.bat。最后以管理员权限运行在域控中或者具有管理ADUC权限的计算机中即可。
 
