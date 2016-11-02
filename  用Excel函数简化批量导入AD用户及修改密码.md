@@ -5,8 +5,15 @@
 今天给大家分享借助Excel的函数功能来简化脚本的编写。网上很多是直接用txt文本编辑或者借助excel表格补充完整后，转换成csv格式的。像我们公司动辄5K用户需要添加到AD中还要设置密码，用复制粘贴的方式得做无数遍啊，用岳老师的话：得找几个“表妹”来码这些个表格。。。。。。
 想到很久前看到过一网友写的一文章，借助Excel函数来简化输入，于是自己试着做了下，效果还不错。。。。
 首先说下用到的命令，csvde.exe和dsmod.exe，具体用法可参考微软KB库
+
 http://support.microsoft.com/kb/327620
+
 http://support.microsoft.com/kb/322684
+
+http://www.computerperformance.co.uk/Logon/Logon_CSVDE_Export.htm
+
+http://www.computerperformance.co.uk/Logon/DSadd_Home.htm
+
 简单说下csvde.exe中用到的定义值
 
 DN,objectClass,sAMAccountName,description,userPrincipalName,displayName,userAccountControl
